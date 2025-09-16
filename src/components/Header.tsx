@@ -1,10 +1,8 @@
-import React from 'react';
-
 interface HeaderProps {
   onAddSquare: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onAddSquare }) => {
+export const Header = ({ onAddSquare }: HeaderProps) => {
   return (
     <header style={{
       position: 'fixed',

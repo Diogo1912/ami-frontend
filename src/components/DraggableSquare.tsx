@@ -6,7 +6,7 @@ interface DraggableSquareProps {
   onMove: (id: number, x: number, y: number) => void;
 }
 
-export const DraggableSquare: React.FC<DraggableSquareProps> = ({ square, onMove }) => {
+export const DraggableSquare = ({ square, onMove }: DraggableSquareProps) => {
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0, initialX: 0, initialY: 0 });
   const squareRef = useRef<HTMLDivElement>(null);

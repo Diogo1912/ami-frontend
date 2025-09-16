@@ -1,4 +1,3 @@
-import React from 'react';
 import { DraggableSquare } from './DraggableSquare';
 import { Square } from '../services/squareService';
 
@@ -7,7 +6,7 @@ interface BoardProps {
   onMoveSquare: (id: number, x: number, y: number) => void;
 }
 
-export const Board: React.FC<BoardProps> = ({ squares, onMoveSquare }) => {
+export const Board = ({ squares, onMoveSquare }: BoardProps) => {
   return (
     <div style={{
       position: 'relative',

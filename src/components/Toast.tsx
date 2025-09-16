@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 interface Toast {
   id: number;
@@ -20,7 +20,7 @@ export const toast = {
   },
 };
 
-export const ToastContainer: React.FC = () => {
+export const ToastContainer = () => {
   const [toasts, setToasts] = useState<Toast[]>([]);
 
   useEffect(() => {
